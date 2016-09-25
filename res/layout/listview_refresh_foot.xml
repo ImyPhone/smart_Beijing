@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:gravity="center_vertical"
+    android:orientation="horizontal" >
+
+    <FrameLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="5dp" >
+
+        
+        <ProgressBar
+            android:id="@+id/pb_listview_foot_loading"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:indeterminateDrawable="@drawable/progressstyleshape" />
+    </FrameLayout>
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <TextView
+            android:id="@+id/tv_listview_foot_state_dec"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" 
+            android:textColor="#ff0000"
+            android:textSize="20sp"
+            android:text="正在加载更多的数据..."/>
+       
+    </LinearLayout>
+
+</LinearLayout>
